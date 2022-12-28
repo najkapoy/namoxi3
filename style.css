@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    
+    
+
+}
+header{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+}
+.hero{
+    
+    padding: 10px;
+    background-color:#60F7EB;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Antic Slab', serif;
+
+}
+
+.logo{
+    font-size: 50px;
+    color: red;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.hero i{
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    display: none;
+
+
+    
+}
+.navbar{
+    display: flex;
+    font-size: 30px;
+    color:skyblue;
+    
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-left: 20px;
+    color:black;
+}
+/* the landing page  */
+
+
+h1{
+    font-size: 30px;
+    font-weight:600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    padding: 20px;
+    
+    
+
+}
+p{
+    margin: 10px 0;
+    color: gray;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+span{
+    color: #60F7EB;
+    font-size: 40px;
+
+
+}
+.span2{
+    margin-left: 30px;
+    color: red;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.about-image2{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* the about section */
+.aboutme-content{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn{
+    
+    background-color: #e75485;
+    color: white;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 4px 7px solid #60F7EB;
+}
+.btn:hover{
+    background-color: white;
+    color: skyblue;
+}
+
+.about-image2{
+    max-width:100%;
+   
+    
+}
+
+/* skill section styling */
+#skills{
+    background-color: white;
+    padding: 70px 0;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 4px;
+    padding: 20px 10px;
+}
+.span-row{
+    grid-column: span,2;
+}
+.card{
+  
+   
+    border-radius: 20px;
+    
+     
+    padding: 9px;
+}
+.card:hover{
+    box-shadow: 0 20px 20px gray;
+    transform: translateY(-9px);
+}
+
+.card-image{
+    border-radius: 20px;
+    margin-bottom: 20px;
+  
+
+  max-width: 100%;
+  max-height: 300px;
+    
+   
+}
+.card-image:hover{
+    transform: scale(1);
+
+}
+footer{
+    padding: 30px 0;
+    
+  
+}
+.f-content{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     width: 100%;
+     gap: 30px;
+
+}
+.f-c a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 33%;
+}
+.coppyright{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-c i{
+    font-size: 30px;
+    color: skyblue;
+    margin-right: 30px;
+}
+
+/* our client section goes here  */
+#our-clients{
+    background-color: #60F7EB;
+}
+.c-row{
+  
+    margin-top: 20px;
+    padding: 160px 0;
+    display:flex;
+    gap: 9px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.col{
+    max-width: 37%;
+   
+}
+
+.cleint-image{
+    max-height: 400px;
+
+    max-width: 100%;
+}
+@media (max-width:720px){
+    .row{
+        grid-template-columns: 1fr;
+    }
+    
+    .hero i{
+        display:block;
+    }
+    .navbar a{
+        display: none;
+        
+        
+    }
+    .landin{
+       padding-top: 130px;
+    
+        
+    
+    }
+ 
+  
+
+    h2{
+        font-size: 18px;
+    }
+
+
+  
+}
+@media (min-width:721px){
+    .hero{
+    
+        padding: 20px;
+        background-color:#60F7EB;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Antic Slab', serif;
+        margin-bottom: 30px;
+    
+    }
+    .landin{
+        display: flex;
+        justify-content: center;
+        padding-top: 130px;
+        
+    
+    }
+    .btn{
+        background-color: #031311;
+        color: white;
+        font-size: 32px;
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0 10px 4px 7px solid gray;
+    }
+    .se-page{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .content2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+}
